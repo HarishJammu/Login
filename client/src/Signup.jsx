@@ -12,14 +12,14 @@ const Signup=()=>{
 let navigate=useNavigate()
 
  const  handleSubmit= (event)=>{
-    const usersName = JSON.stringify({ name: name , email: email , password: Password });
+    const empDetails = JSON.stringify({ name: name , email: email , password: Password });
     const customConfig = {
         headers: {
         'Content-Type': 'application/json'
         }
     };
     event.preventDefault()
-    axios.post("http://localhost:3001/singup",usersName, customConfig)
+    axios.post("http://localhost:3001/singup",empDetails, customConfig)
     .then(result=>console.log(result))
        
 
