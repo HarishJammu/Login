@@ -12,10 +12,6 @@ const Signup=()=>{
 let navigate=useNavigate()
 
  const  handleSubmit= (event)=>{
-    console.log("name ", name)
-    console.log("email ", email)
-    console.log("Password ", Password)
-
     const usersName = JSON.stringify({ name: name , email: email , password: Password });
     const customConfig = {
         headers: {
